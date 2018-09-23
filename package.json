@@ -14,8 +14,8 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Greg Hutchinson",
+  "license": "",
   "devDependencies": {
     "electron": "^2.0.0"
   }

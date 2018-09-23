@@ -6,19 +6,19 @@ var dialog = app.dialog;
 var fs = require('fs');
 alert("Made it here");
 
-document.getElementById('openButton').onclick = {} => {
+document.getElementById('openButton').onclick = () => {
     dialog.showOpenDialog((fileNames) => {
       if (fileNames === undefined) {
         alert('No File selected');
       }
       else {
-        readFile(filenames[0]);
+        readFile(fileNames[0]);
       }
     });
 };
 
 function readFile(filepath) {
-  fs.readFile(filepath, 'utf-8', {err, data} => {
+  fs.readFile(filepath, 'utf-8', (err, data) => {
       if (err) {
         alert(err);
         return;
