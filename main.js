@@ -36,48 +36,9 @@ function createWindow () {
 // Some APIs can only be used after this event occurs.
 app.on('ready', function() {
   createWindow()
-  const template = [
-    {
-      label: 'File',
-      submenu: [
-        {
-          label: 'subMenu1',
-          click: function() {
-            console.log("Clicked")
-          }
-        },
-        {
-            type: 'separator',
-        },
-        {
-          label: 'subMenu2'
-        }
-      ]
-    },
-    {
-        label: 'Edit',
-        submenu: [
-          {role: 'undo'},
-          {role: 'redo'},
-          {role: 'separator'},
-          {role: 'cut'},
-          {role: 'copy'},
-          {role: 'paste'},
-          {role: 'pasteandmatchstyle'},
-          {role: 'delete'},
-          {role: 'selectall'}
-        ]
-    },
-    {
-        label: 'Help',
-        click: function() {
-          electron.shell.openExternal('http://electron.atom.io')
-        }
-    }
-  ]
 
-  const menu = Menu.buildFromTemplate(template)
-  Menu.setApplicationMenu(menu)
+//  const menu = Menu.buildFromTemplate(template)
+//  Menu.setApplicationMenu(menu)
 });
 
 // Quit when all windows are closed.
